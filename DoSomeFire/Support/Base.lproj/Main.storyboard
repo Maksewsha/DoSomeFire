@@ -75,7 +75,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvH-yg-P5V"/>
-                                    <segue destination="2So-Fx-SR0" kind="show" identifier="tasksSegue" id="v8E-3b-j7S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,6 +103,7 @@
                         <outlet property="doesntExistLabel" destination="1F6-gJ-qg2" id="IHc-25-hzq"/>
                         <outlet property="emailTextField" destination="Cbq-6E-wc0" id="1iJ-fz-Zud"/>
                         <outlet property="passTextField" destination="6k1-7S-zsy" id="aXN-Nu-zHg"/>
+                        <segue destination="2So-Fx-SR0" kind="show" identifier="tasksSegue" id="B1k-rA-DhP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -150,6 +150,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="pf8-0u-21H">
+                        <barButtonItem key="leftBarButtonItem" title="Sign out" id="qQD-ki-euT">
+                            <connections>
+                                <action selector="barButtonTapped:" destination="Vdv-rF-43S" id="XaU-dl-4nY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qsj-xN-0d4">
                             <connections>
                                 <action selector="barButtonTapped:" destination="Vdv-rF-43S" id="M4z-jq-Gtp"/>
